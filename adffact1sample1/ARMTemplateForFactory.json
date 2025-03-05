@@ -291,7 +291,10 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "retaildataset"
+					"table": {
+						"value": "@dataset().tablename",
+						"type": "Expression"
+					}
 				}
 			},
 			"dependsOn": [
