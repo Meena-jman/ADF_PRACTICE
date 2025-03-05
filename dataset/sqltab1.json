@@ -1,8 +1,8 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "sqltab1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase1",
+			"referenceName": "LS_SQL",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -14,12 +14,11 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo",
+			"schema": "",
 			"table": {
 				"value": "@dataset().tablename",
 				"type": "Expression"
 			}
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
